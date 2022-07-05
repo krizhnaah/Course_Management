@@ -13,17 +13,15 @@ import Home from "./component/home/Home";
 
 function App() {
   return (
-    <div className="App">
-      <Routes>
-        <Route exact path={"/" || "/home"} element={<Layout />}>
-          <Route path="/" element={<Home />} />
-          <Route path="courses" element={<Courses />} />
-          <Route path="placement-services" element={<Placement />} />
-          <Route path="about-us" element={<AboutUs />} />
-          <Route path="contact" element={<Contact />} />
-        </Route>
-      </Routes>
-    </div>
+    <Routes>
+      <Route exact path={"/" || "/home"} element={<Layout />}>
+        <Route path="/" element={<Home />} />
+        <Route path="courses" element={<Courses />} />
+        <Route path="placement-services" element={<Placement />} />
+        <Route path="about-us" element={<AboutUs />} />
+        <Route path="contact" element={<Contact />} />
+      </Route>
+    </Routes>
   );
 }
 

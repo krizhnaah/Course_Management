@@ -1,4 +1,4 @@
-.course-content-container {
+/* .course-content-container {
   display: flex;
 }
 .course-side-container {
@@ -8,17 +8,17 @@
 .course-main-container {
   flex: 3 1 auto;
   background-color: tan;
-}
+} */
 
 /* Small devices like small phones */
 
-@media screen and (max-width: 600px) {
+/* @media screen and (max-width: 600px) {
   .App {
     min-width: 100vmax;
   }
-}
+} */
 
 /* Medium devices like tables */
 
-@media screen and (max-width: 855px) {
-}
+/* @media screen and (max-width: 855px) {
+} */
