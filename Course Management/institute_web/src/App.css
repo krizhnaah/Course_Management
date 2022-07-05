@@ -20,3 +20,16 @@ a {
   text-align: center;
   min-height: 100vh;
 }
+
+/* Small devices like small phones */
+
+@media screen and (max-width: 600px) {
+  .App {
+    min-width: 100vmax;
+  }
+}
+
+/* Medium devices like tables */
+
+@media screen and (max-width: 855px) {
+}

@@ -1,10 +1,10 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>com.hibernate.test</groupId>
-  <artifactId>emp-skill</artifactId>
+  <groupId>com.hibernate.institute</groupId>
+  <artifactId>course-management</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <name>emp-skill-test</name>
-  <description>hibernate test using skill</description>
+  <name>course-management-hbm</name>
+  <description>course management for institute using hibernate mapping</description>
 
   <properties>
 		<maven.compiler.source>16</maven.compiler.source>

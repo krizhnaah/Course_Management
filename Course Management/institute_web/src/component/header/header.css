@@ -1,7 +1,10 @@
 .header {
+  min-width: 100vw;
+  width: 100vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 .header-logo {
   height: 40px;
@@ -39,4 +42,22 @@
   vertical-align: middle;
   border-radius: 50%;
   border: 1px solid black;
+}
+
+/* Small devices like small phones */
+
+@media screen and (max-width: 600px) {
+  .header-list-option {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    flex-direction: column;
+    background-color: peru;
+    min-height: 100vh;
+  }
+}
+
+/* Medium devices like tables */
+
+@media screen and (max-width: 855px) {
 }
