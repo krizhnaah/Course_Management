@@ -1,0 +1,42 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-logo {
+  height: 40px;
+  width: 80px;
+}
+.header-list-logo {
+  display: flex;
+  padding: 5px;
+}
+.header-list-option {
+  display: flex;
+  padding: 15px;
+}
+.header-list-login {
+  display: flex;
+  padding: 15px;
+}
+.header-list-option-login {
+  display: flex;
+}
+.header li {
+  padding: 15px 15px;
+}
+.header .header-list-logo li {
+  padding: 5px;
+}
+
+.icons {
+  color: black;
+  vertical-align: middle;
+}
+.profile {
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+  border-radius: 50%;
+  border: 1px solid black;
+}

@@ -1,0 +1,22 @@
+/* ====================Variables========================== */
+:root {
+  --text-white: white;
+  --text-black: black;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+a {
+  cursor: pointer;
+  color: var(--main-black);
+}
+
+.App {
+  text-align: center;
+  min-height: 100vh;
+}

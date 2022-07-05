@@ -1,0 +1,11 @@
+com\institute\model\State.class
+com\institute\main\InstituteMain.class
+com\institute\model\City.class
+com\institute\model\Batch.class
+com\institute\model\Gender.class
+com\institute\model\Student.class
+com\institute\model\Course.class
+com\institute\model\Subject.class
+com\institute\model\Employee.class
+com\institute\hibernateUtility\HibernateUtility.class
+com\institute\model\Designation.class

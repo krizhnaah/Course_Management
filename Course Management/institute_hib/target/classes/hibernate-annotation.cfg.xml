@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<hibernate-configuration>
+
+	<session-factory>
+		
+        <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+        <property name="hibernate.connection.url">jdbc:postgresql://localhost:5432/institute_db</property>
+        <property name="hibernate.connection.username">postgres</property>
+        <property name="hibernate.connection.password">mypostgres</property>
+        
+        <!-- Connection Pool size -->
+        
+        <property name="hibernate.connection.pool_size">1</property>
+        
+        <!-- Connection Pool size -->
+        
+        <property name="hibernate.current_session_context_class">thread</property>
+        
+        <!-- Output the SQL queries, should  be disabled in Production -->
+        
+        <property name="hibernate.show_sql">true</property>
+        
+        <!-- Dialect is require to let Hibernate know the database type , MySQL , Oracle , etc
+        Hibernate 4 automatically figure out dialect from database connection metadata -->
+        
+        <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+
+		<mapping class="com.institute.model.Batch" />
+		<mapping class="com.institute.model.City" />
+		<mapping class="com.institute.model.Course" />
+		<mapping class="com.institute.model.Designation" />
+		<mapping class="com.institute.model.Employee" />
+		<mapping class="com.institute.model.Gender" />
+		<mapping class="com.institute.model.State" />
+		<mapping class="com.institute.model.Student" />
+		<mapping class="com.institute.model.Subject" />
+		
+
+		
+	</session-factory>
+
+</hibernate-configuration>
