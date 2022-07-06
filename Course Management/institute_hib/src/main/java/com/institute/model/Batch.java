@@ -14,10 +14,10 @@ import jakarta.persistence.Table;
 public class Batch {
 	
 	@Id
-	@Column(name = "batch_id")
+	@Column(name = "id")
 	private byte batchId;
 	
-	@Column(name = "batch_time")
+	@Column(name = "time")
 	private LocalTime batchTime;
 	
 	@ManyToMany(mappedBy = "batch")

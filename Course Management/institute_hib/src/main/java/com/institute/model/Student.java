@@ -18,10 +18,10 @@ import jakarta.persistence.Table;
 public class Student {
 
 	@Id
-	@Column(name = "student_id")
+	@Column(name = "id")
 	private int studentId;
 	
-	@Column(name = "student_name")
+	@Column(name = "name")
 	private String studentName;
 	
 	@Column(name = "age")

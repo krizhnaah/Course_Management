@@ -13,10 +13,10 @@ import jakarta.persistence.Table;
 public class Gender {
 	
 	@Id
-	@Column(name = "gender_id")
+	@Column(name = "id")
 	private byte genderId;
 	
-	@Column(name = "gender_name")
+	@Column(name = "name")
 	private String genderName;
 	
 	@OneToMany(mappedBy = "gender")

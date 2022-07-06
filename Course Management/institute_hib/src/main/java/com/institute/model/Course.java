@@ -16,11 +16,11 @@ import jakarta.persistence.Table;
 public class Course {
 	
 	@Id
-	@Column(name = "course_id")
+	@Column(name = "id")
 	private int courseId;
-	@Column(name = "course_name")
+	@Column(name = "name")
 	private String courseName;
-	@Column(name = "course_fee")
+	@Column(name = "fee")
 	private double courseFee;
 	
 	@ManyToMany(cascade = CascadeType.PERSIST)

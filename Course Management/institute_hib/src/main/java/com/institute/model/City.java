@@ -17,10 +17,10 @@ import jakarta.persistence.Table;
 public class City {
 	
 	@Id
-	@Column(name = "city_id")
+	@Column(name = "id")
 	private int cityId;
 	
-	@Column(name = "city_name")
+	@Column(name = "name")
 	private String cityName;
 	
 	@ManyToOne(cascade = CascadeType.ALL)

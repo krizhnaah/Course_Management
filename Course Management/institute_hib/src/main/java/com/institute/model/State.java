@@ -13,10 +13,10 @@ import jakarta.persistence.Table;
 public class State {
 	
 	@Id
-	@Column(name = "state_id")
+	@Column(name = "id")
 	private int stateId;
 	
-	@Column(name = "state_name")
+	@Column(name = "name")
 	private String stateName;
 	
 	@OneToMany(mappedBy = "state")

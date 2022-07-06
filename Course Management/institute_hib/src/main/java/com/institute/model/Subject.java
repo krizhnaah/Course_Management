@@ -1,5 +1,6 @@
 package com.institute.model;
 
+import java.time.LocalTime;
 import java.util.Set;
 
 import jakarta.persistence.Column;
@@ -15,11 +16,14 @@ import jakarta.persistence.Table;
 public class Subject {
 	
 	@Id
-	@Column(name = "subject_id")
+	@Column(name = "id")
 	private int subjectId;
 	
-	@Column(name = "subject_name")
+	@Column(name = "name")
 	private String subjectName;
+	
+	@Column(name = "duration")
+	private LocalTime duration;
 	
 	@ManyToMany(mappedBy = "courseSubjects")
 	private Set<Course> courses;

@@ -13,10 +13,10 @@ import jakarta.persistence.Table;
 public class Designation {
 
 	@Id
-	@Column(name = "designation_id")
+	@Column(name = "id")
 	private int designationId;
 	
-	@Column(name = "designation_name")
+	@Column(name = "name")
 	private String desigantionName;
 	
 	@OneToMany(mappedBy = "designation")
