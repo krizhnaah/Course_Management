@@ -5,29 +5,40 @@ import { GrClose } from "react-icons/gr";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { MenuBarData } from "./menubar-data/MenuBarData";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
 const Header = () => {
+  const [menuBar, SetMenuBar] = useState(false);
+
+  function handleMenuBar() {
+    SetMenuBar(!menuBar);
+  }
+
   return (
     <>
       <div className="header">
-        <div>
-          <GiHamburgerMenu className="icons" title="menu" />
-        </div>
         <div className="header-list-option">
-          <nav>
-            <ul>
+          <div>
+            <GiHamburgerMenu
+              className="icons"
+              title="menu"
+              onClick={handleMenuBar}
+            />
+          </div>
+          <nav className={menuBar ? "menubar active" : "menubar"}>
+            <ul onClick={handleMenuBar}>
               <li>
                 <GrClose className="icons" />
               </li>
               {MenuBarData.map((option) => {
                 return (
                   <>
-                    <Link to={option.path}>
-                      <li className={option.cName}>
+                    <li className={option.cName}>
+                      <Link to={option.path}>
                         {option.icon}
                         <span>{option.title}</span>
-                      </li>
-                    </Link>
+                      </Link>
+                    </li>
                   </>
                 );
               })}

@@ -21,4 +21,9 @@ a {
   min-height: 100vh;
 }
 
+.icons {
+  font-size: 20px;
+  cursor: pointer;
+}
+
 /* Small devices like small phones */

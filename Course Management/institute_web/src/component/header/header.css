@@ -1,1 +1,54 @@
+.header {
+  position: relative;
+}
+
+/* Menubar styles */
+
+.menubar {
+  height: 100vh;
+  width: 40vw;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: -100%;
+  transition: 500ms;
+  background-color: rgb(255, 173, 72);
+}
+.active {
+  left: 0;
+  transition: 200ms;
+}
+.menubar li,
+.menubar li span {
+  padding: 12px 15px;
+  transition: 500ms;
+}
+.menubar li a {
+  display: flex;
+  align-items: center;
+}
+.menubar li:hover {
+  background-color: darkorange;
+}
+
+/* .menubar li:nth-child(1n + 2):hover {
+  background-color: darkorange;
+} */
+.menubar li:nth-child(1) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 10px;
+  right: 5px;
+  margin-left: auto;
+  margin-bottom: 10px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid rgb(255, 173, 72);
+}
+.menubar li:nth-child(1):hover {
+  border: 1px solid black;
+}
 
