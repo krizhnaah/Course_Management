@@ -1,13 +1,12 @@
 package com.institute.model;
 
-import java.time.LocalTime;
+
+import java.time.Duration;
 import java.util.Set;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.JoinTable;
 import jakarta.persistence.ManyToMany;
 import jakarta.persistence.Table;
 
@@ -23,7 +22,7 @@ public class Subject {
 	private String subjectName;
 	
 	@Column(name = "duration")
-	private LocalTime duration;
+	private Duration duration;
 	
 	@ManyToMany(mappedBy = "courseSubjects")
 	private Set<Course> courses;
@@ -44,6 +43,12 @@ public class Subject {
 	}
 	public void setSubjectName(String subjectName) {
 		this.subjectName = subjectName;
+	}
+	public Duration getDuration() {
+		return duration;
+	}
+	public void setDuration(Duration duration) {
+		this.duration = duration;
 	}
 	public Set<Course> getCourses() {
 		return courses;

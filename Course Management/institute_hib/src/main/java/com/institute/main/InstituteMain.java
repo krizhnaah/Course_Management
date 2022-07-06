@@ -1,5 +1,6 @@
 package com.institute.main;
 
+import java.time.Duration;
 import java.time.LocalTime;
 import java.util.ArrayList;
 import java.util.Date;
@@ -24,10 +25,14 @@ public class InstituteMain {
 		Subject coreJava = new Subject();
 		coreJava.setSubjectId(1);
 		coreJava.setSubjectName("Core Java");
+		coreJava.setDuration(Duration.ofHours(30));
 		//2
 		Subject advancedJava = new Subject();
 		advancedJava.setSubjectId(2);
 		advancedJava.setSubjectName("Advanced Java");
+		advancedJava.setDuration(Duration.ofHours(60));
+
+		
 		
 		//Set of Subjects
 		
