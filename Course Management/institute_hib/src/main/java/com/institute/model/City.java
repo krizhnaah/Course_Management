@@ -28,10 +28,10 @@ public class City {
 	private State state;
 	
 	@OneToMany(mappedBy = "city")
-	private Set<Student> students = new HashSet<Student>();
+	private Set<Student> students;
 	
-	@OneToMany(cascade = CascadeType.ALL , mappedBy = "city")
-	private Set<Employee> employees = new HashSet<Employee>();
+	@OneToMany(mappedBy = "city")
+	private Set<Employee> employees;
 
 	
 	
@@ -74,7 +74,21 @@ public class City {
 	public void setEmployees(Set<Employee> employees) {
 		this.employees = employees;
 	}
-	
-	
+
+//	public Set<Student> getStudents() {
+//		return students;
+//	}
+//
+//	public void setStudents(Set<Student> students) {
+//		this.getStudents().add((Student) students);
+//	}
+//
+//	public Set<Employee> getEmployees() {
+//		return employees;
+//	}
+//
+//	public void setEmployees(Set<Employee> employees) {
+//		this.getEmployees().add((Employee) employees);
+//	}	
 
 }

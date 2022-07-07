@@ -108,7 +108,6 @@ public class InstituteMain {
 		dinesh.setStudentId(100101);
 		dinesh.setStudentName("Dinesh");
 		dinesh.setAge((byte) 23);
-		dinesh.setCity(coimbatore);
 		dinesh.setBatch(morningBatch);
 		dinesh.setCourses(courses);
 		dinesh.setDoj(new Date(2022,05,23));
@@ -118,6 +117,7 @@ public class InstituteMain {
 		dinesh.setPhoneNum(9898878746L);
 		dinesh.setPincode(641625);
 		dinesh.setQualification("B.E Computer Science");
+		dinesh.setCity(coimbatore);
 		
 		Student lokesh = new Student();
 		
