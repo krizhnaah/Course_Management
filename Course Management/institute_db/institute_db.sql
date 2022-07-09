@@ -158,7 +158,6 @@ CREATE TABLE course_schema.student
 (
 	id INT PRIMARY KEY,
 	name VARCHAR(30) NOT NULL,
-	batch SMALLINT,
 	age SMALLINT,
 	gender SMALLINT NOT NULL,
 	qualification VARCHAR(30),
@@ -174,6 +173,9 @@ CREATE TABLE course_schema.student
 	FOREIGN KEY (city) REFERENCES course_schema.city(id),
 	FOREIGN KEY (batch) REFERENCES course_schema.batch(id)
 );
+
+-- ALTER TABLE course_schema.student
+-- 	DROP COLUMN batch;
 
 
 DROP TABLE IF EXISTS course_schema.student_batch_relation;
