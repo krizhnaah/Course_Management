@@ -8,7 +8,7 @@ SELECT * FROM pg_stat_activity;
 	
 SELECT pg_terminate_backend(pid) 
 FROM pg_stat_activity
-WHERE pid = '5988';
+WHERE pid = '80';
 
 --CREATE DATABASE
 
@@ -118,14 +118,15 @@ CREATE TABLE course_schema.employee
 	qualification VARCHAR(30),
 	designation SMALLINT NOT NULL,
 	hobby VARCHAR(50),
-	city VARCHAR(50) NOT NULL,
+-- 	city VARCHAR(50) NOT NULL,
+	city SMALLINT NOT NULL,
 	doj DATE DEFAULT CURRENT_DATE,
 	phone_num BIGINT NOT NULL,
 	email VARCHAR(30) NOT NULL,
 	pincode INT,
 	
 	FOREIGN KEY (gender) REFERENCES course_schema.gender(id),
-	FOREIGN KEY (city) REFERENCES course_schema.city(name),
+	FOREIGN KEY (city) REFERENCES course_schema.city(id),
 	FOREIGN KEY (designation) REFERENCES course_schema.designation(id)
 );
 
@@ -161,7 +162,8 @@ CREATE TABLE course_schema.student
 	age SMALLINT,
 	gender SMALLINT NOT NULL,
 	qualification VARCHAR(30),
-	city VARCHAR(50) NOT NULL,
+-- 	city VARCHAR(50) NOT NULL,
+	city SMALLINT NOT NULL,
 	doj DATE DEFAULT CURRENT_DATE,
 	paid_fee NUMERIC,
 	phone_num BIGINT NOT NULL,
@@ -169,7 +171,7 @@ CREATE TABLE course_schema.student
 	pincode INT,
 	
 	FOREIGN KEY (gender) REFERENCES course_schema.gender(id),
-	FOREIGN KEY (city) REFERENCES course_schema.city(name),
+	FOREIGN KEY (city) REFERENCES course_schema.city(id),
 	FOREIGN KEY (batch) REFERENCES course_schema.batch(id)
 );
 

@@ -117,7 +117,7 @@ public class InstituteMain {
 		dinesh.setPhoneNum(9898878746L);
 		dinesh.setPincode(641625);
 		dinesh.setQualification("B.E Computer Science");
-		dinesh.setCity(coimbatore);
+		dinesh.setCity(chennai);
 		
 		Student lokesh = new Student();
 		
@@ -150,8 +150,7 @@ public class InstituteMain {
 		karthikeyan.setEmployeeId(10101);
 		karthikeyan.setEmployeeName("Karthikeyan");
 		karthikeyan.setAge((byte) 35);
-		karthikeyan.setBatch(morningBatch);
-		karthikeyan.setCity(coimbatore);
+		karthikeyan.setBatch(morningBatch);		karthikeyan.setCity(coimbatore);
 		karthikeyan.setDesignation(seniorStaff);
 		karthikeyan.setDoj(new Date(2018,03,19));
 		karthikeyan.setEmail("karthikeyan1903@gmail.com");
@@ -182,6 +181,7 @@ public class InstituteMain {
 //		session.persist(chennai);
 //		session.persist(karthikeyan);
 		session.persist(dinesh);
+//		session.persist(coimbatore);
 
 
 		

@@ -61,11 +61,11 @@ public class Employee {
 	private int pincode;
 	
 	@ManyToMany(cascade = CascadeType.ALL)
-	@JoinTable(name = "subject_employee_relation" , joinColumns = @JoinColumn(name = "employee") , inverseJoinColumns = @JoinColumn(name = "subject"))
+	@JoinTable(name = "subject_employee_relation", schema = "course_schema", joinColumns = @JoinColumn(name = "employee_id") , inverseJoinColumns = @JoinColumn(name = "subject_id"))
 	private Set<Subject> subjects;
 	
 	@ManyToMany(cascade = CascadeType.ALL)
-	@JoinTable (name = "batch_employee_relation" , joinColumns = @JoinColumn(name = "employee") , inverseJoinColumns = @JoinColumn(name = "batch"))
+	@JoinTable (name = "batch_employee_relation", schema = "course_schema", joinColumns = @JoinColumn(name = "employee_id") , inverseJoinColumns = @JoinColumn(name = "batch_id"))
 	private Set<Batch> batch;
 	
 	

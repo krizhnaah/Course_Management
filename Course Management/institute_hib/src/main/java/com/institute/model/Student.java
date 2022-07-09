@@ -54,11 +54,11 @@ public class Student {
 	private int pincode;
 	
 	@ManyToMany(cascade = CascadeType.ALL)
-	@JoinTable(name = "student_batch_relation" , joinColumns = @JoinColumn(name = "student") , inverseJoinColumns = @JoinColumn(name = "batch"))
+	@JoinTable(name = "student_batch_relation", schema = "course_schema", joinColumns = @JoinColumn(name = "student_id") , inverseJoinColumns = @JoinColumn(name = "batch_id"))
 	private Set<Batch> batch;
 	
 	@ManyToMany(cascade = CascadeType.ALL)
-	@JoinTable(name = "student_course_relation" , joinColumns = @JoinColumn(name = "student") , inverseJoinColumns = @JoinColumn(name = "course"))
+	@JoinTable(name = "student_course_relation", schema = "course_schema", joinColumns = @JoinColumn(name = "student_id") , inverseJoinColumns = @JoinColumn(name = "course_id"))
 	private Set<Course> courses;
 	
 	
