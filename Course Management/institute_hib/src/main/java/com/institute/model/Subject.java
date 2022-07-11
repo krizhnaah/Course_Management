@@ -22,7 +22,7 @@ public class Subject {
 	private String subjectName;
 	
 	@Column(name = "duration")
-	private Duration duration;
+	private int duration;
 	
 	@ManyToMany(mappedBy = "courseSubjects")
 	private Set<Course> courses;
@@ -44,10 +44,10 @@ public class Subject {
 	public void setSubjectName(String subjectName) {
 		this.subjectName = subjectName;
 	}
-	public Duration getDuration() {
+	public int getDuration() {
 		return duration;
 	}
-	public void setDuration(Duration duration) {
+	public void setDuration(int duration) {
 		this.duration = duration;
 	}
 	public Set<Course> getCourses() {

@@ -22,15 +22,16 @@ public class InstituteMain {
 		//Subject
 		
 		//1
+		
 		Subject coreJava = new Subject();
 		coreJava.setSubjectId(1);
 		coreJava.setSubjectName("Core Java");
-		coreJava.setDuration(Duration.ofHours(30));
+		coreJava.setDuration(30);
 		//2
 		Subject advancedJava = new Subject();
 		advancedJava.setSubjectId(2);
 		advancedJava.setSubjectName("Advanced Java");
-		advancedJava.setDuration(Duration.ofHours(60));
+		advancedJava.setDuration(60);
 
 		
 		
@@ -175,12 +176,12 @@ public class InstituteMain {
 		
 		session.beginTransaction();
 		
-		//persist data
+		//to persist data
 
 //		session.persist(javaDeveloper);
 //		session.persist(chennai);
-//		session.persist(karthikeyan);
-		session.persist(dinesh);
+		session.persist(karthikeyan);
+//		session.persist(dinesh);
 //		session.persist(coimbatore);
 
 
